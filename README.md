@@ -67,7 +67,7 @@ The tests verify the local approval flow, AI citation validation, and payment-st
 
 ## Deployment notes
 
-`npm run build` creates `dist/`; `npm start` serves the built app. Set `NODE_ENV=production`, `ADMIN_TOKEN`, `APP_BASE_URL`, and the provider variables in your host. **Persist `DATABASE_PATH` on a durable volume.** The local SQLite store is appropriate for one demo instance; a multi-instance product needs a shared database and proper user authentication. The client review link is a bearer link; use a strong, private URL and only fictional client data in a public demo.
+`npm run build` creates `dist/`; `npm start` serves the built app. Set `NODE_ENV=production`, `ADMIN_TOKEN`, and the provider variables in your host. **Persist `DATABASE_PATH` on a durable volume.** The local SQLite store is appropriate for one demo instance; a multi-instance product needs a shared database and proper user authentication. The client review link is a bearer link; use a strong, private URL and only fictional client data in a public demo.
 
 The production server refuses to start without `ADMIN_TOKEN`. Give judges the token in private testing instructions if using a hosted demo. Do not publish it in the repository. `DEMO_MODE=true` only enables the sample project and sample comparison; it never fakes a PayPal payment.
 
@@ -82,6 +82,7 @@ The production server refuses to start without `ADMIN_TOKEN`. Give judges the to
 - Real AI and PayPal sandbox flow verified with your own credentials.
 - Working hosted demo or complete setup and test-account instructions.
 - Public YouTube demo under three minutes, showing the product functioning.
+- Use [SUBMISSION_DRAFT.md](SUBMISSION_DRAFT.md) for the Devpost description and video script after real provider calls are verified.
 - Devpost description that identifies the target user, problem, AI tool, PayPal APIs, and limits.
 
 The hackathon closes **November 12, 2026 at 12:00 p.m. PST**. The repository and video need to be publicly accessible by then.
