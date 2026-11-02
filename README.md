@@ -2,6 +2,8 @@
 
 ScopeLedger is a working prototype for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/). It compares a software client's new request with the agreed statement of work, prepares an editable change order, records client approval, and sends a PayPal sandbox invoice. It is deliberately a **single-merchant sandbox prototype**, not an escrow or payout service.
 
+The dated build and startup plan is in [ROADMAP.md](ROADMAP.md).
+
 ## What works
 
 - Create a project with client, agreed scope, hourly rate, and currency.
